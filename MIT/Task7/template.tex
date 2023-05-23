@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[russian,english]{babel}
+
+
+\begin{document}
+
+Производя подстановку для одновременного применения обоих сдвигов, получим:
+
+\begin{equation}
+\begin{cases}
+A = 3 \delta - b_s = -b - 3 a \Delta + 3 \delta - 6 \Delta^2, \\
+\begin{array}{lll}
+B & = & 3 \delta^2 - 2 b_s \delta + a_s c_s - 4 d_s =\\
+& = & 3 \delta^2 - 2(b + 3 a \Delta + 6 \Delta^2) \delta + (a + 4 \Delta)(c + 2 b \Delta + 3 a \Delta^2 + 4 \Delta^3) - \\
+&   & - 4(d + c \Delta + b \Delta^2 + a \Delta^3 + \Delta^4), \\
+C & = & \delta^3 - b_s \delta^2 + (a_s c_s - 4 d_s) \delta - a_s^2 d_s - c_s^2 + 4 b_s d_s = \\
+& = & \delta^3 - (b + 3 a \Delta + 6 \Delta^2) \delta^2 + ((a + 4 \Delta)(c + 2 b \Delta + 3 a \Delta^2 + 4 \Delta^3) - \\
+&   & - 4(d + c \Delta + b \Delta^2 + a \Delta^3 + \Delta^4)) \delta - (a + 4 \Delta)^2(d + c \Delta + b \Delta^2 + a \Delta^3 + \Delta^4) - \\
+&   & - (c + 2 b \Delta + 3 a \Delta^2 + 4 \Delta^3)^2 + 4(b + 3 a \Delta + 6 \Delta^2)(d + c \Delta + b \Delta^2 + a \Delta^3 + \Delta^4). 
+\end{array}
+\end{cases}
+\end{equation}
+
+Расчёты показывают, что когда $\delta = \alpha a_s^2 + \beta b_s$, где $8 \alpha +3 \beta = 1$, коэффициенты резольвенты не меняются при любом сдвиге x.
+
+\end{document}
+

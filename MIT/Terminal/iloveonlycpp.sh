@@ -1,0 +1,1 @@
+find . ! -name "*.cpp" | xargs rm -d 2> /dev/null
