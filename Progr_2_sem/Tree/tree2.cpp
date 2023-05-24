@@ -117,7 +117,9 @@ void Delete(tree*& tr, tree* v) {  //  удаление узла
             else { //аналогично для левого
                 tr = tr->left;
             }
-            tr->parent = NULL;
+            if (tr) { //если новый корень не равен NULL, то убеждаемся, что у него нет родителя
+                tr->parent = NULL;
+            }
         }
         else {
             if (!v->left) {//если есть правый ребенок
